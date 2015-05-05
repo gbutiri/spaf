@@ -1,19 +1,10 @@
-<html>
+<?php include ($_SERVER['DOCUMENT_ROOT'] . '/config.php'); ?>
+<?php include (_DOCROOT . '/htmls/header.php'); ?>
 
-<head>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/ajax-controller.css" />
-	<link rel="stylesheet" href="/css/main.css" />
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="/js/ajax-controller.js"></script>
-</head>
+
+<h1>Index Testing Page</h1>
+<a href="#" class="tmbtn" data-action="show_test_modal" data-module="dashboard">Test Ajax</a>
 
 
 
-<body>
-	<h1>Index Testing Page</h1>
-	<a href="#" class="tmbtn" data-action="show_test_modal" data-module="dashboard">Test Ajax</a>
-</body>
-
-
-</html>
+<?php include (_DOCROOT . '/htmls/footer.php'); ?>

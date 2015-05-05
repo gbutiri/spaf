@@ -91,6 +91,8 @@
 }
 .fuzz .vbox-content {
     color: #333;
+	min-width: 250px;
+	min-height: 150px;
 }
 .fuzz .vbox-content h4 {
     margin: 0;
