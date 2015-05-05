@@ -164,7 +164,7 @@ $(document).on('doAjaxController',function(e,$this) {
             case "open":
                 g_vboxlevel++;
                 $('body').css({'overflow':'hidden'}).append('<div class="fuzz" id="vbox_'+g_vboxlevel+'"><table align="center" class="vbox-table"><tr><td class="vbox-cell"><div class="vbox"><div class="vbox-content">'+content+'</div><a href="#" class="vbox-close">&times;</a></div></td></tr></table></div>');
-                $(document).find('#vbox_'+g_vboxlevel).animate({opacity:1},100,function() {}).find('.vbox').animate({top:0},100);
+                $(document).find('#vbox_'+g_vboxlevel).animate({opacity:1},100,function() {}).find('.vbox').addClass('visible');
                 break;
             case "close":
                 $(document).find('#vbox_'+g_vboxlevel).animate({opacity:0},100,function() {
@@ -173,7 +173,7 @@ $(document).on('doAjaxController',function(e,$this) {
                     if (g_vboxlevel == 0) {
                         $('body').css({'overflow':'auto'});
                     }
-                }).find('.vbox').animate({top:-15},100);;
+                }).find('.vbox').removeClass('visible');
                 break;
             case "closeall":
                 $('.fuzz').remove();

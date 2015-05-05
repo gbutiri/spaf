@@ -1,3 +1,22 @@
 html, body {
 	font-family: Arial;
 }
+
+nav {
+
+}
+nav li {
+	float: left;
+}
+nav li a {
+	display: block;
+	margin-right: 10px;
+	padding: 10px;
+	
+}
+.clear {
+	clear: both;
+	line-height: 1px;
+	height: 1px;
+	
+}

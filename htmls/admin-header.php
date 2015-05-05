@@ -14,7 +14,10 @@
 
 <body>
 
+<nav>
 <ul>
 	<li><a href="/merchant/">Home</a></li>
 	<li><a href="/merchant/mail/">Mail</a></li>
 </ul>
+</nav>
+<div class="clear">&nbsp;</div>

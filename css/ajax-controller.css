@@ -88,7 +88,11 @@
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 6px;
 	outline: 0;
-    top: -15px;
+    top: -10px;
+	transition: all 0.1s ease-out;
+}
+.fuzz .vbox.visible {
+	top: 0;
 }
 .fuzz .vbox-content {
     color: #333;
