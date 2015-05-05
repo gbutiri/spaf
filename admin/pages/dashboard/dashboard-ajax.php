@@ -9,13 +9,13 @@ function show_test_modal() {
 	// include template files if rendering things.
 	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
 	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	
 	ob_start();
-	
 	$user = get_some_data(1);
-	
 	render_ok_box('The stuff', 'The user ' . $user['value'] . ' has been OK!');
 	$vbox = ob_get_contents();
 	ob_end_clean();
+	
 	echo json_encode(array(
 		'vbox' => $vbox
 	));
@@ -26,19 +26,20 @@ function show_test_modal_confirm() {
 	// include template files if rendering things.
 	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
 	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	
 	ob_start();
-	
 	$user = get_some_data(1);
-	
 	render_confirm_box('Prompt!', 'Are you sure you want to remove ' . $user['value'] . ' from this page?', 'do_after_test');
 	$vbox = ob_get_contents();
 	ob_end_clean();
+	
 	echo json_encode(array(
 		'vbox' => $vbox
 	));
 }
 
 function do_after_test() {
+	// just a test to remove STEVE from the page.
 	echo json_encode(array(
 		'removes' => array('#steve'),
 		'vboxclose' => true
