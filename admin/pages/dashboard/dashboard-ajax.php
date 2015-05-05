@@ -21,6 +21,30 @@ function show_test_modal() {
 	));
 }
 
+function show_test_modal_confirm() {
+	// include data files if need to get data from db.
+	// include template files if rendering things.
+	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
+	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	ob_start();
+	
+	$user = get_some_data(1);
+	
+	render_confirm_box('Prompt!', 'Are you sure you want to remove ' . $user['value'] . ' from this page?', 'do_after_test');
+	$vbox = ob_get_contents();
+	ob_end_clean();
+	echo json_encode(array(
+		'vbox' => $vbox
+	));
+}
+
+function do_after_test() {
+	echo json_encode(array(
+		'removes' => array('#steve'),
+		'vboxclose' => true
+	));
+}
+
 function bad_call() {
 	echo json_encode(array(
 		'vbox' => '<h4>Function error!</h4><p>This function <strong>' . trim($_GET['action']) . '</strong> does not exist.</p>'
