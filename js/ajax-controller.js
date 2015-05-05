@@ -50,7 +50,7 @@ function postAjax(d) {
 $(document).on('doAjaxController',function(e,$this) {
 	var _data = '';
 	var _action = 'bad_call';
-	var _module = 'site';
+	var _module = 'dashboard';
 	var _do_ajax = true;
 	var _toggle_type = '';
 	
@@ -62,8 +62,8 @@ $(document).on('doAjaxController',function(e,$this) {
 	if (typeof($parent.attr('data-trigger')) !== 'undefined') {_toggle_type = $parent.attr('data-trigger');}
 
 	// loading circle
-	$('body').append('<div id="loading-circle"><i class="fa fa-spinner fa-spin"></i><div class="loading-circle-message-wrapper"><div class="loading-circle-message">Loading...</div></div></div>');
-	if (typeof($this.attr('data-loadmsg')) !== 'undefined') {_loadmsg = $this.attr('data-loadmsg');}else{_loadmsg = 'Processing ...';}
+	$('body').append('<div id="loading-circle"><i class="fa fa-circle-o-notch fa-spin"></i><div class="loading-circle-message-wrapper"><div class="loading-circle-message">Loading...</div></div></div>');
+	if (typeof($this.attr('data-loadmsg')) !== 'undefined') {_loadmsg = $this.attr('data-loadmsg');}else{_loadmsg = 'Stand by ...';}
 	$(document).find('#loading-circle').find('.loading-circle-message').html(_loadmsg);
 	
 	if ($this.hasClass('ajaxform')) {
@@ -87,7 +87,7 @@ $(document).on('doAjaxController',function(e,$this) {
 
 	if (_do_ajax) {
 		$.ajax({
-			url: '/modules/' + _module + '/' + _module + '-ajax.php?action=' + _action,
+			url: '/admin/pages/' + _module + '/' + _module + '-ajax.php?action=' + _action,
 			type: 'post',
 			data: _data,
 			dataType: 'json',
