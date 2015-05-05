@@ -158,8 +158,8 @@ $(document).on('doAjaxController',function(e,$this) {
             }
         }
     });
+	
     $.fn.vbox = function (action,content) {
-        
         switch (action) {
             case "open":
                 g_vboxlevel++;
