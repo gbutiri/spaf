@@ -1,11 +1,23 @@
-<?php 
+<?php include ($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+
 $action = isset($_GET['action']) ? trim($_GET['action']) : 'bad_call';
 if (function_exists($action)) {call_user_func($action);} else {bad_call();}
 
 
 function show_test_modal() {
+	// include data files if need to get data from db.
+	// include template files if rendering things.
+	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
+	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	ob_start();
+	
+	$user = get_some_data(1);
+	
+	render_ok_box('The stuff', 'The user ' . $user['value'] . ' has been OK!');
+	$vbox = ob_get_contents();
+	ob_end_clean();
 	echo json_encode(array(
-		'vbox' => '<h4>Header</h4><p>testing</p>'
+		'vbox' => $vbox
 	));
 }
 

@@ -59,6 +59,7 @@ $(document).on('doAjaxController',function(e,$this) {
 	if (typeof($this.attr('data-data')) !== 'undefined') {_data = $this.attr('data-data');}
 	if (typeof($this.attr('data-action')) !== 'undefined') {_action = $this.attr('data-action');}
 	if (typeof($this.attr('data-module')) !== 'undefined') {_module = $this.attr('data-module');}
+	if (typeof($this.attr('data-vboxclose')) !== 'undefined') {_do_ajax = false;$.fn.vbox('close');}
 	if (typeof($parent.attr('data-trigger')) !== 'undefined') {_toggle_type = $parent.attr('data-trigger');}
 
 	// loading circle
