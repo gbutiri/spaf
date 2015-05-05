@@ -102,18 +102,6 @@
 .fui-check:before {
   content: "\e60a";
   }
-.fui-radio-unchecked:before {
-  content: "\e60b";
-  }
-.fui-radio-checked:before {
-  content: "\e60c";
-  }
-.fui-checkbox-unchecked:before {
-  content: "\e60d";
-  }
-.fui-checkbox-checked:before {
-  content: "\e60e";
-  }
 .fui-info-circle:before {
   content: "\e60f";
   }
@@ -1991,15 +1979,15 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   text-align: center;
   cursor: pointer;
   }
-.checkbox .icons .icon-checked,
-.radio .icons .icon-checked {
+.checkbox .icons .fa-check-square,
+.radio .icons .fa-check-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
-.checkbox .icon-checked,
-.radio .icon-checked,
-.checkbox .icon-unchecked,
-.radio .icon-unchecked {
+.checkbox .fa-check-square,
+.radio .fa-check-square,
+.checkbox .fa-square,
+.radio .fa-square {
   position: absolute;
   top: 0;
   left: 0;
@@ -2012,32 +2000,6 @@ fieldset[disabled] .input-group-btn .btn-default.active {
           transition: color .25s linear;
 
   -webkit-filter: none;
-  }
-.checkbox .icon-checked:before,
-.radio .icon-checked:before,
-.checkbox .icon-unchecked:before,
-.radio .icon-unchecked:before {
-  font-family: 'Flat-UI-Icons';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  }
-.checkbox .icon-checked:before {
-  content: "\e60e";
-  }
-.checkbox .icon-unchecked:before {
-  content: "\e60d";
-  }
-.radio .icon-checked:before {
-  content: "\e60c";
-  }
-.radio .icon-unchecked:before {
-  content: "\e60b";
   }
 .checkbox input[type="checkbox"].custom-checkbox,
 .radio input[type="checkbox"].custom-checkbox,
@@ -2053,17 +2015,17 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   outline: none !important;
   opacity: 0;
   }
-.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked,
-.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked,
-.checkbox input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked,
-.radio input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked {
+.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .fa-square,
+.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .fa-square,
+.checkbox input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .fa-square,
+.radio input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .fa-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
-.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .icon-checked,
-.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .icon-checked,
-.checkbox input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .icon-checked,
-.radio input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .icon-checked {
+.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .fa-check-square,
+.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover):not(:disabled) + .icons .fa-check-square,
+.checkbox input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .fa-check-square,
+.radio input[type="radio"].custom-radio:hover:not(.nohover):not(:disabled) + .icons .fa-check-square {
           filter: none;
   opacity: 1;
 
@@ -2075,17 +2037,17 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .radio input[type="radio"].custom-radio:checked + .icons {
   color: #1abc9c;
   }
-.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .icon-unchecked,
-.radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-unchecked,
-.checkbox input[type="radio"].custom-radio:checked + .icons .icon-unchecked,
-.radio input[type="radio"].custom-radio:checked + .icons .icon-unchecked {
+.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-square,
+.radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-square,
+.checkbox input[type="radio"].custom-radio:checked + .icons .fa-square,
+.radio input[type="radio"].custom-radio:checked + .icons .fa-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
-.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
-.radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
-.checkbox input[type="radio"].custom-radio:checked + .icons .icon-checked,
-.radio input[type="radio"].custom-radio:checked + .icons .icon-checked {
+.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
+.radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
+.checkbox input[type="radio"].custom-radio:checked + .icons .fa-check-square,
+.radio input[type="radio"].custom-radio:checked + .icons .fa-check-square {
   color: #1abc9c;
           filter: none;
   opacity: 1;
@@ -2099,19 +2061,19 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   color: #e6e8ea;
   cursor: default;
   }
-.checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .icon-unchecked,
-.radio input[type="checkbox"].custom-checkbox:disabled + .icons .icon-unchecked,
-.checkbox input[type="radio"].custom-radio:disabled + .icons .icon-unchecked,
-.radio input[type="radio"].custom-radio:disabled + .icons .icon-unchecked {
+.checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .fa-square,
+.radio input[type="checkbox"].custom-checkbox:disabled + .icons .fa-square,
+.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-square,
+.radio input[type="radio"].custom-radio:disabled + .icons .fa-square {
           filter: none;
   opacity: 1;
 
   -webkit-filter: none;
   }
-.checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .icon-checked,
-.radio input[type="checkbox"].custom-checkbox:disabled + .icons .icon-checked,
-.checkbox input[type="radio"].custom-radio:disabled + .icons .icon-checked,
-.radio input[type="radio"].custom-radio:disabled + .icons .icon-checked {
+.checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .fa-check-square,
+.radio input[type="checkbox"].custom-checkbox:disabled + .icons .fa-check-square,
+.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-check-square,
+.radio input[type="radio"].custom-radio:disabled + .icons .fa-check-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
@@ -2121,17 +2083,17 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .radio input[type="radio"].custom-radio:disabled:checked + .icons {
   color: #e6e8ea;
   }
-.checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-unchecked,
-.radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-unchecked,
-.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .icon-unchecked,
-.radio input[type="radio"].custom-radio:disabled:checked + .icons .icon-unchecked {
+.checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-square,
+.radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-square,
+.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-square,
+.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
-.checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-checked,
-.radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-checked,
-.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .icon-checked,
-.radio input[type="radio"].custom-radio:disabled:checked + .icons .icon-checked {
+.checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
+.radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
+.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square,
+.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square {
   color: #e6e8ea;
           filter: none;
   opacity: 1;
@@ -2144,19 +2106,19 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .radio input[type="radio"].custom-radio:indeterminate + .icons {
   color: #bdc3c7;
   }
-.checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .icon-unchecked,
-.radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .icon-unchecked,
-.checkbox input[type="radio"].custom-radio:indeterminate + .icons .icon-unchecked,
-.radio input[type="radio"].custom-radio:indeterminate + .icons .icon-unchecked {
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-square,
+.radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-square,
+.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-square,
+.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-square {
           filter: none;
   opacity: 1;
 
   -webkit-filter: none;
   }
-.checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .icon-checked,
-.radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .icon-checked,
-.checkbox input[type="radio"].custom-radio:indeterminate + .icons .icon-checked,
-.radio input[type="radio"].custom-radio:indeterminate + .icons .icon-checked {
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-check-square,
+.radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-check-square,
+.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-check-square,
+.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-check-square {
   filter: alpha(opacity=0);
   opacity: 0;
   }
@@ -2221,10 +2183,10 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .input-group-addon .checkbox input[type="radio"].custom-radio:checked + .icons {
   color: #fff;
   }
-.input-group-addon .radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
-.input-group-addon .checkbox input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
-.input-group-addon .radio input[type="radio"].custom-radio:checked + .icons .icon-checked,
-.input-group-addon .checkbox input[type="radio"].custom-radio:checked + .icons .icon-checked {
+.input-group-addon .radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
+.input-group-addon .checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
+.input-group-addon .radio input[type="radio"].custom-radio:checked + .icons .fa-check-square,
+.input-group-addon .checkbox input[type="radio"].custom-radio:checked + .icons .fa-check-square {
   color: #fff;
   }
 .input-group-addon .radio input[type="checkbox"].custom-checkbox:disabled + .icons,
@@ -2239,10 +2201,10 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .input-group-addon .checkbox input[type="radio"].custom-radio:disabled:checked + .icons {
   color: rgba(230, 232, 234, .6);
   }
-.input-group-addon .radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-checked,
-.input-group-addon .checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .icon-checked,
-.input-group-addon .radio input[type="radio"].custom-radio:disabled:checked + .icons .icon-checked,
-.input-group-addon .checkbox input[type="radio"].custom-radio:disabled:checked + .icons .icon-checked {
+.input-group-addon .radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
+.input-group-addon .checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
+.input-group-addon .radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square,
+.input-group-addon .checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square {
   color: rgba(230, 232, 234, .6);
   }
 .radio + .radio,
