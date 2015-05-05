@@ -1,0 +1,111 @@
+#loading-circle {
+    z-index: 1001;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    text-align: center;
+    display: block;
+    opacity: 1;
+    animation: fadeup 0.4s;
+    -webkit-animation: fadeup 0.3s;
+    -moz-animation: fadeup 0.3s;
+    -o-animation: fadeup 0.3s;
+}
+@keyframes fadeup {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes fadeup {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadeup {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes fadeup {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.loading-circle-message-wrapper {
+    position: absolute;
+    top: 50%;
+    margin-top: 80px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.loading-circle-message {
+    display: inline-block;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 50px #000;
+    border-radius: 10px;
+}
+#loading-circle .fa {
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin-top: -25px;
+    position: absolute;
+    font-size: 40px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 5px;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px #000;
+}
+
+.fuzz {
+    position: fixed;
+    background: rgba(0,0,0,0.85);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    overflow: auto;
+}
+.fuzz .vbox-table {
+    height: 100%;
+}
+.fuzz .vbox {
+    background-color: #3A3E3F;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 0 50px #000;
+}
+.fuzz .vbox-content {
+    color: #fff;
+}
+.fuzz .vbox-close {
+    position: absolute;
+    color: #3A3E3F;
+    text-decoration: none;
+    right: -6px;
+    top: -6px;
+    border: 5px solid #3A3E3F;
+    border-radius: 20px;
+    width: 30px;
+    text-align: center;
+    font-size: 29px;
+    height: 30px;
+    background-color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: Arial;
+}
+.fuzz .vbox-close:hover {
+    background-color: #ddd;
+}
