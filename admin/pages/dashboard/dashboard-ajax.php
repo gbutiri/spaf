@@ -46,6 +46,20 @@ function do_after_test() {
 	));
 }
 
+function bring_steve_back() {
+	// just a test to remove STEVE from the page.
+	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	
+	ob_start();
+	render_steve();
+	$steve_html = ob_get_contents();
+	ob_end_clean();
+
+	echo json_encode(array(
+		'htmls' => array('#steve_holder' => $steve_html),
+	));
+}
+
 function bad_call() {
 	echo json_encode(array(
 		'vbox' => '<h4>Function error!</h4><p>This function <strong>' . trim($_GET['action']) . '</strong> does not exist.</p>'

@@ -16,5 +16,8 @@ function render_confirm_box($header = '', $message = '', $action = '') {
 	<?php
 }
 
+function render_steve() {
+	?><div id="steve">STEVE</div><?php
+}
 
 ?>
