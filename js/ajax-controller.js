@@ -74,10 +74,11 @@ $(document).on('doAjaxController',function(e,$this) {
 	} else if ($this.hasClass('autosave')) {
 		// if it's an autosave field...
 		_data = $this.attr('name') + '=' + $this.val();
-		if ($this.val() !== _autosave_value || $parent.hasClass('has-error')) {
+		if ($this.val() !== _autosave_value) {
 			$this.attr('disabled','disabled');
 			$parent.removeClass('has-error has-success');
 		} else {
+			//if ($parent.hasClass('has-error')) {
 			$this.removeAttr('disabled');
 			_do_ajax = false;
 		}
