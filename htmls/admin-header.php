@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="/css/main.css" />
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="/js/ajax-controller.js"></script>
+	<script src="/js/dispatch.js"></script>
 	
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 </head>
