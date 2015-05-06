@@ -1980,7 +1980,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   cursor: pointer;
   }
 .checkbox .icons .fa-check-square,
-.radio .icons .fa-circle-o {
+.radio .icons .fa-dot-circle-o {
   filter: alpha(opacity=0);
   opacity: 0;
   }
@@ -2039,15 +2039,15 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-square,
 .radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-square,
-.checkbox input[type="radio"].custom-radio:checked + .icons .fa-square,
-.radio input[type="radio"].custom-radio:checked + .icons .fa-square {
+.checkbox input[type="radio"].custom-radio:checked + .icons .fa-circle-o,
+.radio input[type="radio"].custom-radio:checked + .icons .fa-circle-o {
   filter: alpha(opacity=0);
   opacity: 0;
   }
 .checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
 .radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
-.checkbox input[type="radio"].custom-radio:checked + .icons .fa-check-square,
-.radio input[type="radio"].custom-radio:checked + .icons .fa-check-square {
+.checkbox input[type="radio"].custom-radio:checked + .icons .fa-dot-circle-o,
+.radio input[type="radio"].custom-radio:checked + .icons .fa-dot-circle-o {
   color: #1abc9c;
           filter: none;
   opacity: 1;
@@ -2063,8 +2063,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .fa-square,
 .radio input[type="checkbox"].custom-checkbox:disabled + .icons .fa-square,
-.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-square,
-.radio input[type="radio"].custom-radio:disabled + .icons .fa-square {
+.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-circle-o,
+.radio input[type="radio"].custom-radio:disabled + .icons .fa-circle-o {
           filter: none;
   opacity: 1;
 
@@ -2072,8 +2072,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:disabled + .icons .fa-check-square,
 .radio input[type="checkbox"].custom-checkbox:disabled + .icons .fa-check-square,
-.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-check-square,
-.radio input[type="radio"].custom-radio:disabled + .icons .fa-check-square {
+.checkbox input[type="radio"].custom-radio:disabled + .icons .fa-dot-circle-o,
+.radio input[type="radio"].custom-radio:disabled + .icons .fa-dot-circle-o {
   filter: alpha(opacity=0);
   opacity: 0;
   }
@@ -2085,15 +2085,15 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-square,
 .radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-square,
-.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-square,
-.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-square {
+.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-circle-o,
+.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-circle-o {
   filter: alpha(opacity=0);
   opacity: 0;
   }
 .checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
 .radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
-.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square,
-.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square {
+.checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-dot-circle-o,
+.radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-dot-circle-o {
   color: #e6e8ea;
           filter: none;
   opacity: 1;
@@ -2108,8 +2108,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-square,
 .radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-square,
-.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-square,
-.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-square {
+.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-circle-o,
+.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-circle-o {
           filter: none;
   opacity: 1;
 
@@ -2117,8 +2117,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .checkbox input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-check-square,
 .radio input[type="checkbox"].custom-checkbox:indeterminate + .icons .fa-check-square,
-.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-check-square,
-.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-check-square {
+.checkbox input[type="radio"].custom-radio:indeterminate + .icons .fa-dot-circle-o,
+.radio input[type="radio"].custom-radio:indeterminate + .icons .fa-dot-circle-o {
   filter: alpha(opacity=0);
   opacity: 0;
   }
@@ -2185,8 +2185,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .input-group-addon .radio input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
 .input-group-addon .checkbox input[type="checkbox"].custom-checkbox:checked + .icons .fa-check-square,
-.input-group-addon .radio input[type="radio"].custom-radio:checked + .icons .fa-check-square,
-.input-group-addon .checkbox input[type="radio"].custom-radio:checked + .icons .fa-check-square {
+.input-group-addon .radio input[type="radio"].custom-radio:checked + .icons .fa-dot-circle-o,
+.input-group-addon .checkbox input[type="radio"].custom-radio:checked + .icons .fa-dot-circle-o {
   color: #fff;
   }
 .input-group-addon .radio input[type="checkbox"].custom-checkbox:disabled + .icons,
@@ -2203,8 +2203,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .input-group-addon .radio input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
 .input-group-addon .checkbox input[type="checkbox"].custom-checkbox:disabled:checked + .icons .fa-check-square,
-.input-group-addon .radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square,
-.input-group-addon .checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-check-square {
+.input-group-addon .radio input[type="radio"].custom-radio:disabled:checked + .icons .fa-dot-circle-o,
+.input-group-addon .checkbox input[type="radio"].custom-radio:disabled:checked + .icons .fa-dot-circle-o {
   color: rgba(230, 232, 234, .6);
   }
 .radio + .radio,
