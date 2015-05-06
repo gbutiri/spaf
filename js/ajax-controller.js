@@ -140,7 +140,7 @@ $(document).on('doAjaxController',function(e,$this) {
 	// close all toggles.
 	$target = $(e.target);
 	$wrapper = $target.parents('.trigger-wrapper');
-	console.log($wrapper);
+	//console.log($wrapper);
 	
 	$('.trigger-wrapper.reset').not($wrapper).find('.trigger, .target').removeClass('hidden');
 	$('.trigger-wrapper.reset').not($wrapper).find('.init-hidden').addClass('hidden');
