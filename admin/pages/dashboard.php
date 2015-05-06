@@ -26,8 +26,10 @@
 		<a href="#" class="tmbtn" data-action="bring_steve_back" data-module="dashboard">Bring Steve Back</a>
 		</p>
 	
-		<input type="text" class="form-control">
-		
+		<div class="form-group ">
+			<input type="text" id="username" name="username" value="" class="form-control autosave" data-action="save_username" placeholder="Enter some number">
+			<span class="input-icon fui-check-inverted"></span>
+		</div>		
 		
 		<label class="checkbox" for="checkbox2">
             <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" class="custom-checkbox">

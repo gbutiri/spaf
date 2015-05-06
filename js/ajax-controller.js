@@ -73,11 +73,12 @@ $(document).on('doAjaxController',function(e,$this) {
 		$this.find('.err').html('');
 	} else if ($this.hasClass('autosave')) {
 		// if it's an autosave field...
-		_data = $this.attr('name') + '=' + $this.text();
-		$this.addClass('saving');
-		if ($this.html() !== _autosave_value || $this.hasClass('error')) {
+		_data = $this.attr('name') + '=' + $this.val();
+		if ($this.val() !== _autosave_value || $parent.hasClass('has-error')) {
+			$this.attr('disabled','disabled');
+			$parent.removeClass('has-error has-success');
 		} else {
-			$this.removeClass('saving');
+			$this.removeAttr('disabled');
 			_do_ajax = false;
 		}
 	} else {
@@ -97,13 +98,15 @@ $(document).on('doAjaxController',function(e,$this) {
 				if (data.vbox) {$.fn.vbox('open',data.vbox);};
 				if (data.vboxclose) {$.fn.vbox('close');};
 				if ($this.hasClass('autosave')) {
+					
 					if (!data.error) {
-						$this.removeClass('saving error').addClass('saved');
-						var k = setTimeout(function () {$this.removeClass('saved error')},500);
-						 $this.parent().find('.err').html('');
+						$this.removeAttr('disabled');
+						$parent.addClass('has-success');
+						var k = setTimeout(function () {$parent.removeClass('has-success has-error')},1000);
+						$parent.find('.err').html('');
 					} else {
-						$this.removeClass('saving').addClass('error');
-						$this.parent().find('.err').html(data.error);
+						$this.removeAttr('disabled').parent().addClass('has-error');
+						$parent.find('.err').html(data.error);
 					}
 				} else {
 					data._toggle_type = _toggle_type;
@@ -128,7 +131,7 @@ $(document).on('doAjaxController',function(e,$this) {
 	$(document).trigger('doAjaxController',[$(this)]);
 }).on('focus','.autosave',function(e) {
 	var $this = $(this);
-	_autosave_value = $this.html();
+	_autosave_value = $this.val();
 }).on('blur','.autosave',function (e) {
 	e.preventDefault();
 	$(document).trigger('doAjaxController',[$(this)]);

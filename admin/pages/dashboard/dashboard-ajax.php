@@ -60,6 +60,16 @@ function bring_steve_back() {
 	));
 }
 
+function save_username() {
+	if (is_numeric($_POST['username'])) {
+		$error = array();
+	} else {
+		$error = array('error' => true);
+	}
+	sleep(1);
+	echo json_encode($error);
+}
+
 function bad_call() {
 	echo json_encode(array(
 		'vbox' => '<h4>Function error!</h4><p>This function <strong>' . trim($_GET['action']) . '</strong> does not exist.</p>'
