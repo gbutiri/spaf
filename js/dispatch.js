@@ -40,6 +40,7 @@ function postAjax(d) {
 	for(el in d.attrchanges) {for (value in d.attrchanges[el]) {$(el).prop(value,d.attrchanges[el][value]);}}
 	for(el in d.classRemoves) {el_split(el).removeClass(d.classRemoves[el]);}
 	for(el in d.classAdds) {el_split(el).addClass(d.classAdds[el]);}
+	for(el in d.classToggles) {el_split(el).toggleClass(d.classToggles[el]);}
 	for(el in d.csselems) {el_split(el).css(d.csselems[el][0], d.csselems[el][1]);};
 	if (typeof(d.closevbox) !== 'undefined') {$.fn.vbox('close');}
 	if (typeof(d.js) !== 'undefined') {try { eval(d.js);} catch(e) {}}

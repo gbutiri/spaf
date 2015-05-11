@@ -70,6 +70,12 @@ function save_username() {
 	echo json_encode($error);
 }
 
+function do_the_switch() {
+	echo json_encode(array(
+		'classToggles' => array('#on_off_switch' => 'bootstrap-switch-off bootstrap-switch-on'),
+	));
+}
+
 function bad_call() {
 	echo json_encode(array(
 		'vbox' => '<h4>Function error!</h4><p>This function <strong>' . trim($_GET['action']) . '</strong> does not exist.</p>'

@@ -4852,6 +4852,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   }
 .bootstrap-switch > div > span {
   z-index: 1;
+  float: left;
   display: inline-block;
   width: 66px;
   height: 100%;
