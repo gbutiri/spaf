@@ -1,6 +1,7 @@
 <?php include (_DOCROOT . '/htmls/admin-header.php'); ?>
 
 
+<div class="container">
 <div class="row">
 	<div class="col-md-3">
 	</div>
@@ -61,6 +62,7 @@
 	</div>
 	<div class="col-md-3">
 	</div>
+</div>
 </div>
 
 <?php include (_DOCROOT . '/htmls/admin-footer.php'); ?>
