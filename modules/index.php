@@ -9,7 +9,7 @@ $p_bits = explode("/", $p);
 //var_dump($p_bits);
 
 if (isset($p_bits[0]) && $p_bits[0] != '') {
-	include (_DOCROOT . '/admin/pages/' . $p_bits[0] . '.php');
+	include (_DOCROOT . '/modules/pages/' . $p_bits[0] . '.php');
 }
 
 
