@@ -91,7 +91,7 @@ $(document).on('doAjaxController',function(e,$this) {
 
 	if (_do_ajax) {
 		$.ajax({
-			url: '/admin/pages/' + _module + '/' + _module + '-ajax.php?action=' + _action,
+			url: '/modules/pages/' + _module + '/' + _module + '-ajax.php?action=' + _action,
 			type: 'post',
 			data: _data,
 			dataType: 'json',

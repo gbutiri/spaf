@@ -5,11 +5,11 @@ RewriteRule ^(.*)\.html$ $1.php [L]
 
 RewriteRule ^customer$ /customer/ [R]
 RewriteRule ^customer/(.*[^/])$ /customer/$1/ [R]
-RewriteRule ^customer/(.*)$ /admin/index.php?p=$1 [L]
+RewriteRule ^customer/(.*)$ /modules/index.php?p=$1 [L]
 
 RewriteRule ^merchant$ /merchant/ [R]
 RewriteRule ^merchant/(.*[^/])$ /merchant/$1/ [R]
-RewriteRule ^merchant/(.*)$ /admin/index.php?p=$1 [L]
+RewriteRule ^merchant/(.*)$ /modules/index.php?p=$1 [L]
 
 # "Static" pages.
 RewriteRule ^about$ /about.php [L]
