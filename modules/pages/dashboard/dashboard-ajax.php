@@ -7,8 +7,8 @@ if (function_exists($action)) {call_user_func($action);} else {bad_call();}
 function show_test_modal() {
 	// include data files if need to get data from db.
 	// include template files if rendering things.
-	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
-	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	include(_DOCROOT . '/modules/pages/dashboard/dashboard-data.php');
+	include(_DOCROOT . '/modules/pages/dashboard/dashboard-tmpl.php');
 	
 	ob_start();
 	$user = get_some_data(1);
@@ -24,8 +24,8 @@ function show_test_modal() {
 function show_test_modal_confirm() {
 	// include data files if need to get data from db.
 	// include template files if rendering things.
-	include(_DOCROOT . '/admin/pages/dashboard/dashboard-data.php');
-	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	include(_DOCROOT . '/modules/pages/dashboard/dashboard-data.php');
+	include(_DOCROOT . '/modules/pages/dashboard/dashboard-tmpl.php');
 	
 	ob_start();
 	$user = get_some_data(1);
@@ -48,7 +48,7 @@ function do_after_test() {
 
 function bring_steve_back() {
 	// just a test to remove STEVE from the page.
-	include(_DOCROOT . '/admin/pages/dashboard/dashboard-tmpl.php');
+	include(_DOCROOT . '/modules/pages/dashboard/dashboard-tmpl.php');
 	
 	ob_start();
 	render_steve();
