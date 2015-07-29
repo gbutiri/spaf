@@ -19,7 +19,8 @@
 
 <nav>
 <ul>
-	<li><a href="/merchant/">Home</a></li>
+	<li><a href="/">&laquo; Back Home</a></li>
+	<li><a href="/merchant/">Admin Dashboard</a></li>
 	<li><a href="/merchant/mail/">Mail</a></li>
 </ul>
 </nav>
