@@ -1,7 +1,7 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/config.php'); ?>
 <?php include (_DOCROOT . '/htmls/header.php'); ?>
 
-<script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="/js/markerclusterer_packed.js"></script>
 <script type="text/javascript">
 	function initialize() {
@@ -121,8 +121,20 @@ function getMapData() {
 		array(
 			'title' => 'Test 2 Title',
 			'descr' => 'Test two description',
-			'latitude' => 10,
-			'longitude' => 10,
+			'latitude' => 10.56,
+			'longitude' => 30.012,
+		),
+		array(
+			'title' => 'Test 3 Title',
+			'descr' => 'Test three description',
+			'latitude' => 40,
+			'longitude' => 36.4739,
+		),
+		array(
+			'title' => 'Test 4 Title',
+			'descr' => 'Test four description',
+			'latitude' => 39,
+			'longitude' => 31.5,
 		),
 	);
 		
