@@ -9,6 +9,7 @@
 		<li>5/5/2015 - Flat-UI design implemented for basic styling. This may be changed by simply not including the files required to run.</li>
 		<li>5/21/2015 - AJAX File Upload added to framework since it was a highly requested feature. Test here!</li>
 		<li>8/7/2015 - Added google maps with clusterer page for sites that would like to have such a feature.</li>
+		<li>8/8/2015 - Made URLs SEO friendly to redirect to non trailing slash.</li>
 		</ul>
 		
 		<link href="/libs/mini-upload-form/css/style.css" rel="stylesheet" />

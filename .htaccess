@@ -1,15 +1,33 @@
 Options +FollowSymLinks
 RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
 
 RewriteRule ^(.*)\.html$ $1.php [L]
 
-RewriteRule ^customer$ /customer/ [R]
-RewriteRule ^customer/(.*[^/])$ /customer/$1/ [R]
+
+
+#####################
+#   MODULES START   #
+#####################
+
+RewriteRule ^customer/$ /customer [R]
+RewriteRule ^customer$ /modules/index.php?p=$1 [L]
 RewriteRule ^customer/(.*)$ /modules/index.php?p=$1 [L]
 
-RewriteRule ^merchant$ /merchant/ [R]
-RewriteRule ^merchant/(.*[^/])$ /merchant/$1/ [R]
+RewriteRule ^merchant/$ /merchant [R]
+RewriteRule ^merchant$ /modules/index.php?p=$1 [L]
 RewriteRule ^merchant/(.*)$ /modules/index.php?p=$1 [L]
+
+#####################
+#    MODULES END    #
+#####################
+
+
+
+
 
 # "Static" pages.
 RewriteRule ^about$ /about.php [L]

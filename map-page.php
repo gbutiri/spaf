@@ -48,7 +48,7 @@
 								;
 			var marker = new google.maps.Marker({
 				position: latLng,
-				html: markerContent
+				html: markerContent,
 			});
 
 
@@ -60,6 +60,7 @@
 			
 			
 			markers.push(marker);
+			
 		}
 		
 		/*
