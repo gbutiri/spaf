@@ -10,6 +10,7 @@
 		<li>5/21/2015 - AJAX File Upload added to framework since it was a highly requested feature. Test here!</li>
 		<li>8/7/2015 - Added google maps with clusterer page for sites that would like to have such a feature.</li>
 		<li>8/8/2015 - Made URLs SEO friendly to redirect to non trailing slash.</li>
+		<li>8/24/2015 - Added UTF 8 encoding for the database to read special characters.</li>
 		</ul>
 		
 		<link href="/libs/mini-upload-form/css/style.css" rel="stylesheet" />
