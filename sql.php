@@ -17,6 +17,7 @@ function sql_get ($sql, $types = "", $params = array(), $debug = false, $getData
 	}
 	global $dbi;
 	
+    $dbi->set_charset("utf8");
     $stmt = $dbi->prepare($sql);
 	
 	if (false === $stmt) {
