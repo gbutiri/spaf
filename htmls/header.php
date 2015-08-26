@@ -23,6 +23,7 @@
 	<li><a href="/about">About</a></li>
 	<li><a href="/merchant">Application</a></li>
 	<li><a href="/map-page">Map App</a></li>
+	<li><a href="/geolocation">GeoLocation</a></li>
 </ul>
 </nav>
 <div class="clear">&nbsp;</div>
